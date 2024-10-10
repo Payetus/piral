@@ -1,0 +1,66 @@
+{
+  "name": "pilet-angular",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "@angular/cli": "^17",
+    "@angular/compiler-cli": "^17",
+    "@ngtools/webpack": "^17",
+    "@types/node": "latest",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "angular-app": "file:../angular-app/dist/emulator/angular-app-1.0.0.tgz",
+    "copy-webpack-plugin": "^10",
+    "html-loader": "^3",
+    "piral-cli": "1.6.2",
+    "piral-cli-webpack5": "1.6.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router": "5.3.4",
+    "react-router-dom": "5.3.4",
+    "to-string-loader": "^1",
+    "tslib": "2.7.0",
+    "typescript": "~5.2"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade",
+    "postinstall": "pilet declaration"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "importmap": {
+    "inherit": [
+      "angular-app"
+    ],
+    "imports": {
+      "@angular/common": "",
+      "@angular/compiler": "",
+      "@angular/core": "",
+      "@angular/platform-browser": "",
+      "@angular/platform-browser-dynamic": "",
+      "@angular/router": "",
+      "piral-ng-common": ""
+    }
+  },
+  "dependencies": {
+    "@angular/common": "^17",
+    "@angular/compiler": "^17",
+    "@angular/core": "^17",
+    "@angular/platform-browser": "^17",
+    "@angular/platform-browser-dynamic": "^17",
+    "@angular/router": "^17",
+    "core-js": "^3.19.0",
+    "piral-ng": "1.6.2",
+    "piral-ng-common": "^17",
+    "rxjs": "^7.4",
+    "zone.js": "0.14.0"
+  },
+  "source": "src/index.tsx"
+}
