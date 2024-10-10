@@ -16,5 +16,8 @@
       "architect": {},
       "i18n": {}
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

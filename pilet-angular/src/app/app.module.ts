@@ -5,6 +5,7 @@ import { SharedModule } from 'piral-ng/common';
 
 import { PageComponent } from './page.component';
 import { MenuComponent } from './menu.component';
+import { TileComponentComponent } from './tile-component/tile-component.component';
 
 export const routes: Routes = [
   {
@@ -17,8 +18,8 @@ export const routes: Routes = [
 
 @NgModule({
   bootstrap: [],
-  declarations: [PageComponent, MenuComponent],
-  exports: [PageComponent, MenuComponent],
+  declarations: [PageComponent, MenuComponent, TileComponentComponent],
+  exports: [PageComponent, MenuComponent, TileComponentComponent],
   imports: [BrowserModule, SharedModule, RouterModule.forRoot(routes)],
 })
 export class AppModule {}
